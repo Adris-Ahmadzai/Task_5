@@ -1,0 +1,25 @@
+<script>
+    // create a function which takes one parameter
+    let getnum = function(num){
+        // create  a while loop to itrate again and again until the user insert number
+        while (true) {
+
+            // ask user for input
+            let inp = prompt("Enter the number?");
+
+            // change the input to number
+            inp = Number(inp);
+
+            // check if NaN
+            if(!isNaN(inp)){
+                return inp;
+                break;
+            }else{
+                continue;
+            }    
+        }
+    }
+    // Show the result
+    alert(getnum());
+    
+</script>
